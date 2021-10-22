@@ -8,8 +8,9 @@ body {
 }
 
 .hero-base {
+    text-transform: uppercase;
     text-align: center;
-    font-size: 6em;
+    font-size: 7em;
     line-height: 80%;
     animation-name: hero-head-rotate;
     animation-duration: 0.5s;
@@ -22,12 +23,14 @@ body {
 
 .hero-1 {
     animation-delay: 0s;
+    font-family: serif;
 }
 .hero-2 {
     animation-delay: .1s;
 }
 .hero-3 {
     animation-delay: .2s;
+    font-family: serif;
 }
 
 @keyframes hero-head-rotate {
