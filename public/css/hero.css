@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.hero-section {
+    transform-style: preserve-3d;
+}
+
+.hero-base {
+    text-align: center;
+    font-size: 6em;
+    line-height: 80%;
+    animation-name: hero-head-rotate;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transform:perspective(9cm)  rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+}
+
+.hero-1 {
+    animation-delay: 0s;
+}
+.hero-2 {
+    animation-delay: .1s;
+}
+.hero-3 {
+    animation-delay: .2s;
+}
+
+@keyframes hero-head-rotate {
+    0% {
+        transform: rotate3d(0, 0, 0, 0);
+        opacity: 100%;
+    }
+    100% {
+        transform:perspective(9cm)  rotate3d(1, 0, 0, 90deg);
+        opacity: 0;
+    }
+}

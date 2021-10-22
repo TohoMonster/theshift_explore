@@ -1,0 +1,27 @@
+header {
+    display: grid;
+    grid-template-areas: 'logo space apace nav';
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    grid-area: logo;
+}
+
+header nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    list-style: none;
+    width: min-content;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
